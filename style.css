@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.title {
+    font-size: 45px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px cyan;
+}
+
+.board {
+    width: 330px;
+    height: 330px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background: #1b1b1b;
+    border-radius: 15px;
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #000;
+}
+
+.cell:hover {
+    background: #222;
+    box-shadow: 0 0 20px cyan;
+}
+
+.reset {
+    margin-top: 25px;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    background: cyan;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.reset:hover {
+    background: white;
+}
+
+.winner {
+    color: lime;
+    text-shadow: 0 0 15px lime;
+}
